@@ -328,7 +328,8 @@ def parse(String event) {
 			sendEvent(name: "${carAttr}", value: message.payload)
 			
 			if ( message.payload == "driving") {
-				scheduleUpdateDistance()
+				if (logEnable) log.debug "Distance calc disabled, uncomment to enable"
+				//scheduleUpdateDistance()
 			}
 			
 			else {
