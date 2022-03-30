@@ -385,9 +385,9 @@ def parse(String event) {
 
 BigDecimal calculateDistance(BigDecimal latitudeFrom, BigDecimal longitudeFrom) {
 								 
-		double EARTH_RADIUS = 6371
-		BigDecimal latitudeTo =  39.49968076635477
-		BigDecimal longitudeTo = -72.45301854406135
+	double EARTH_RADIUS = 6371
+	BigDecimal latitudeTo =  39.49968076635477
+	BigDecimal longitudeTo = -72.45301854406135
 		
         def dLat = Math.toRadians(latitudeFrom - latitudeTo)
         def dLon = Math.toRadians(longitudeFrom - longitudeTo)
