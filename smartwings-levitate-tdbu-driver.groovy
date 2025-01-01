@@ -151,8 +151,8 @@ List getChildRefreshCmds(Integer endPoint) {
 	List<String> cmds = []
     //Refresh Position
 	logTrace "ChildRefresh: ep ${endPoint}"
-    cmds << switchMultilevelGetCmd(endPoint)
-	cmds << windowCoveringGetCmd(endPoint)
+    	cmds << switchMultilevelGetCmd(endPoint)
+	//cmds << windowCoveringGetCmd(endPoint)
 	return cmds
 }
 
